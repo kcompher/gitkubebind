@@ -25,7 +25,7 @@ GitLab is the leading integrated product for modern software development. Connec
 - [Deploy a reproducible Jupyter sessino for a data scientist to do new work in](https://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
 
 ## Share reproducible research
-- [Shar ](https://mybinder.org/v2/gh/dtak/rrr/master?urlpath=lab)
+- [Let's share some research](https://mybinder.org/v2/gh/dtak/rrr/master?urlpath=lab)
 
 ## Deploy apps
 - [Deploy an R Shiney app](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
@@ -33,9 +33,7 @@ GitLab is the leading integrated product for modern software development. Connec
 - [i like to draw systems](https://mybinder.org/v2/gh/kmader/jupyterlab-drawio/master?urlpath=lab)
 - [i also like to present](http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb)
 
-http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb
-
-# What does a binder user need?
+# What dependencies does a binder user need?
 - Binderhub API
 - python, R, js repos?
 - container registry
