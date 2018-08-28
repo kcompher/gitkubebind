@@ -17,3 +17,14 @@ It groups containers that make up an application into logical units for easy man
 GitLab is the leading integrated product for modern software development. Connecting issue management, version control, code review, CI, CD, and monitoring.. Oh & it has awesome integrations with Kube
 
 
+# let's start with some examples of what we want to do
+
+- [Deploy an R Shiney app](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
+- [Deploy a reproducible R Studio session for a data scientist to do new work in](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
+  - Can on demand RStudio served via binder effectivity replace a standing RStudio server?
+- [Deploy a reproducible Jupyter sessino for a data scientist to do new work in](https://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
+
+# What would be needed to run this disconnected in the enterprise?
+- internal Container Registry (served in gitlab)
+- internal kube cluster 
+- awesome developer/integrator (...**team MIDAS**)
