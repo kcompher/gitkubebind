@@ -17,7 +17,7 @@ It groups containers that make up an application into logical units for easy man
 GitLab is the leading integrated product for modern software development. Connecting issue management, version control, code review, CI, CD, and monitoring.. Oh & it has awesome integrations with Kube
 
 
-# let's start with some examples of what we want to do
+# let's start with some examples of what we want to do with Binder
 
 ## Share computing environments
 - [Deploy a reproducible R Studio session for a data scientist to do new work in](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
@@ -30,7 +30,22 @@ GitLab is the leading integrated product for modern software development. Connec
 ## Deploy apps
 - [Deploy an R Shiney app](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
 - [How about scaling an app already written in jupyter notebooks... checkout appmode](https://mybinder.org/v2/gh/binder-examples/appmode/master?urlpath=apps%2Findex.ipynb)
-- [How about an app that ]()
+- [i like to draw systems](https://mybinder.org/v2/gh/kmader/jupyterlab-drawio/master?urlpath=lab)
+- [i also like to present](http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb)
+
+http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb
+
+# What does a binder user need?
+- Binderhub API
+- python, R, js repos?
+- container registry
+- gitlab or github
+
+## When binder can do it for analytic users, what about developers and 
+
+
+# let's start with some examples of what we want to do with Gitlab
+- interface to kubernetes
 
 
 # What would be needed to run this disconnected in the enterprise?
