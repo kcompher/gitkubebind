@@ -6,3 +6,6 @@ demo on why i like gitlabe, kubernetes, jupyter and binder
 
 
 [Click above or on the binder icon to start the demo](https://mybinder.org/v2/gh/kcompher/gitkubebind/master?filepath=gitkubebind_demo.ipynb)
+
+dmeo part https://mybinder.org/v2/gh/kcompher/gitkubebind/master?filepath=gitkubebind_demo_new.ipynb
+
