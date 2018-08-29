@@ -1,3 +1,8 @@
+
+[![Binder](http://mybinder.org/badge.svg)](https://github.com/kcompher/gitkubebind/edit/master?filepath=index.ipynb)
+
+http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb
+
 # gitkubebind
 demo on why i like gitlabe, kubernetes, jupyter and binder 
 
