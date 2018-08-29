@@ -39,14 +39,18 @@ GitLab is the leading integrated product for modern software development. Connec
 - container registry
 - gitlab or github
 
-## When binder can do it for analytic users, what about developers and 
+## Other caveats
+- those dependencies
+- its it really as easy as adding a requirement.txt or is there yet another markup they need to know?
 
+## When binder can't do it for analytic users... what do developers do?
+- kube?
 
-# let's start with some examples of what we want to do with Gitlab
-- interface to kubernetes
+### will Gitlab's interface to kubernetes work for developers? 
+- Admin configures kubernetes environments in Gitlab, developer pushes code to environment through Gitlab runner CICD.
+- Does this work, or do they need more control?
 
-
-# What would be needed to run this disconnected in the enterprise?
+# What would be needed to run disconnected Binder in the enterprise?
 - internal Container Registry (served in gitlab)
 - other internal Repos?
 - internal kube cluster 
