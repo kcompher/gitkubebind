@@ -11933,8 +11933,16 @@ It groups containers that make up an application into logical units for easy man
 <li>Can on demand RStudio served via binder effectivity replace a standing RStudio server?</li>
 </ul>
 </li>
-<li><a href="https://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb">Deploy a reproducible Jupyter sessino for a data scientist to do new work in</a></li>
+<li><a href="https://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb">Deploy a reproducible Jupyter session for a data scientist to do new work in</a></li>
 </ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Share-reproducible-research">Share reproducible research<a class="anchor-link" href="#Share-reproducible-research">&#182;</a></h2><ul>
 <li><a href="https://mybinder.org/v2/gh/dtak/rrr/master?urlpath=lab">Let's share some research</a></li>
 </ul>
@@ -11944,6 +11952,14 @@ It groups containers that make up an application into logical units for easy man
 <li><a href="https://mybinder.org/v2/gh/kmader/jupyterlab-drawio/master?urlpath=lab">i like to draw systems</a></li>
 <li><a href="http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb">i also like to present</a></li>
 </ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="What-dependencies-does-a-binder-user-need?">What dependencies does a binder user need?<a class="anchor-link" href="#What-dependencies-does-a-binder-user-need?">&#182;</a></h1><ul>
 <li>Binderhub API</li>
 <li>python, R, js repos?</li>
@@ -11952,20 +11968,51 @@ It groups containers that make up an application into logical units for easy man
 </ul>
 <h2 id="Other-caveats">Other caveats<a class="anchor-link" href="#Other-caveats">&#182;</a></h2><ul>
 <li>those dependencies</li>
-<li>its it really as easy as adding a requirement.txt or is there yet another markup they need to know?</li>
-</ul>
-<h2 id="When-binder-can't-do-it-for-analytic-users...-what-do-developers-do?">When binder can't do it for analytic users... what do developers do?<a class="anchor-link" href="#When-binder-can't-do-it-for-analytic-users...-what-do-developers-do?">&#182;</a></h2><ul>
-<li>kube?</li>
-</ul>
-<h3 id="will-Gitlab's-interface-to-kubernetes-work-for-developers?">will Gitlab's interface to kubernetes work for developers?<a class="anchor-link" href="#will-Gitlab's-interface-to-kubernetes-work-for-developers?">&#182;</a></h3><ul>
-<li>Admin configures kubernetes environments in Gitlab, developer pushes code to environment through Gitlab runner CICD.</li>
-<li>Does this work, or do they need more control?</li>
+<li>is it really as easy as adding a requirement.txt or is there yet another markup they need to know?</li>
 </ul>
 <h1 id="What-would-be-needed-to-run-disconnected-Binder-in-the-enterprise?">What would be needed to run disconnected Binder in the enterprise?<a class="anchor-link" href="#What-would-be-needed-to-run-disconnected-Binder-in-the-enterprise?">&#182;</a></h1><ul>
 <li>internal Container Registry (served in gitlab)</li>
 <li>other internal Repos?</li>
 <li>internal kube cluster </li>
 <li>awesome developer/integrator (...<strong>MEGA-MIDAS!</strong>)</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="When-binder-can't-do-it-for-analytic-users...-what-do-developers-do?">When binder can't do it for analytic users... what do developers do?<a class="anchor-link" href="#When-binder-can't-do-it-for-analytic-users...-what-do-developers-do?">&#182;</a></h2><ul>
+<li>deploy with kubernetes</li>
+</ul>
+<h2 id="will-Gitlab's-interface-to-kubernetes-work-for-developers?">will Gitlab's interface to kubernetes work for developers?<a class="anchor-link" href="#will-Gitlab's-interface-to-kubernetes-work-for-developers?">&#182;</a></h2><ul>
+<li>Admin configures kubernetes environments in Gitlab, developer pushes code to environment through Gitlab runner CICD.</li>
+<li>Does this work, or do they need more control?</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Gitlab-details">Gitlab details<a class="anchor-link" href="#Gitlab-details">&#182;</a></h1><ul>
+<li><a href="https://gitlab.com/binderer/jlab-test/container_registry">Container Registry Config</a><ul>
+<li>Governing containers, their artifacts, library dependencies. Could artifacts be managed, integrated with planned, hosted conda repo?</li>
+</ul>
+</li>
+<li><a href="https://gitlab.com/binderer/jlab-test/clusters">Setting up kube in gitlab</a><ul>
+<li>Helm, tiller, ingress and gitlab runner would be developer interfaces</li>
+<li>Jupyterlab now canned support</li>
+</ul>
+</li>
+<li><a href="https://gitlab.com/binderer/jlab-test/environments">Setting up environment scopes</a><ul>
+<li>Environments can be defined (dev, test, prod OR (small, large, larger) Kubernetes could be defined to each environment.</li>
+</ul>
+</li>
 </ul>
 
 </div>
